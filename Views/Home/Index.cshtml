@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+   
+}
+
+<h2>Welcome @Session["uname"].ToString()</h2>
+<hr/>
+Welcome @Session["uemail"].ToString()
+
+
+@*<form method="post" action="Home/Logout">
+    <input type="submit" name="name" value="Logout" />
+</form>*@
+
+<a href="Home/Logout">Logout</a>
